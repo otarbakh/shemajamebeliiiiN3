@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_profilebutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_menu_symbol_of_three_parallel_lines_svgrepo_com"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/iv_profilebutton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_settings_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_more_svgrepo_com"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_avatarIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ixvi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Andrew Ainsley"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_avatarIcon" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/iv_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_profileName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tv_editProfile"
+            style="@style/tv_style"
+            android:text="edit profile"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/iv_separator" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tv_address"
+            style="@style/tv_style"
+            android:text="addres"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/tv_editProfile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tv_nofitication"
+            style="@style/tv_style"
+            android:text="notification"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/payment"
+            style="@style/tv_style"
+            android:text="payment"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/tv_nofitication" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tv_security"
+            style="@style/tv_style"
+            android:text="security"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/payment" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tv_language"
+            style="@style/tv_style"
+            android:text="language"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/tv_security" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tv_darkmode"
+            style="@style/tv_style"
+            android:text="dark_mode"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/tv_language" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/privacy_policy"
+            style="@style/tv_style"
+            android:text="privacy_policy"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/tv_darkmode" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/help_center"
+            style="@style/tv_style"
+            android:text="help_center"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/privacy_policy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/invite_friends"
+            style="@style/tv_style"
+            android:text="invite_friends"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/help_center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/logout"
+            style="@style/tv_style"
+            android:text="logout"
+            android:textColor="#FF0000"
+            app:layout_constraintDimensionRatio="9"
+            app:layout_constraintStart_toEndOf="@id/iv_small_profile_logo"
+            app:layout_constraintTop_toBottomOf="@id/invite_friends" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/iv_small_profile_logo"
+            style="@style/image_style"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_separator" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/iv_address"
+            style="@style/image_style"
+            android:src="@drawable/ic_address_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_small_profile_logo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/iv_notification"
+            style="@style/image_style"
+            android:src="@drawable/ic_notification_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_address" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/iv_payment_logo"
+            style="@style/image_style"
+            android:src="@drawable/ic_payment_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_notification" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_security"
+            style="@style/image_style"
+            android:src="@drawable/ic_security_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_payment_logo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_language_logo"
+            style="@style/image_style"
+            android:src="@drawable/ic_eye_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_security" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_darkmode"
+            style="@style/image_style"
+            android:src="@drawable/ic_eye_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_language_logo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_privacy_logo"
+            style="@style/image_style"
+            android:src="@drawable/ic_padlock_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_darkmode" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_helpcenter"
+            style="@style/image_style"
+            android:src="@drawable/ic_help_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_privacy_logo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_invite_logo"
+            style="@style/image_style"
+            android:src="@drawable/ic_people_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_helpcenter" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/image_style"
+            android:src="@drawable/ic_log_out_svgrepo_com"
+            app:layout_constraintEnd_toStartOf="@id/tv_editProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_invite_logo" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/iv_separator"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/isari1"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/isari2"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/isari3"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/isari4"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/isari5"/>
+
+        <Switch
+            android:id="@+id/gadamrtveli"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/isari6"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/gadamrtveli"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/isari7"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/isari9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/isari8"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrowfront11"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintTop_toBottomOf="@id/isari9"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
